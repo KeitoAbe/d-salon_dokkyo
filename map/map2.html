@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="map2.css">
+  <title>d-salon.map2</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <a href="../">
+      <image src="image/logo.png" class="logo">
+    </a>
+  </div>
+
+  <div class="comment">
+    <p id="comment" class="left_balloon">気になる建物をタップしてね！<br>施設の紹介ページにとぶよ。</p>
+    <img src=" image/dokuta.png" class="dokuko">
+  </div>
+
+  <div class="container">
+
+    <img src="image/dokkyo-android2.png" usemap="#image-map">
+
+    <map name="image-map">
+      <area title="ground" href="gr.html" coords="127,261,330,445" shape="rect">
+      <area title="E" href="etou.html" coords="143,165,140,229,194,227,247,227,247,167" shape="poly">
+      <area title="6" href="6tou.html" coords="38,138,37,113,93,112,94,159" shape="poly">
+      <area title="gakusen" href="gs.html" coords="280,149,328,145,332,192,333,243,278,241" shape="poly">
+      <area title="chuou" href="tyu.html" coords="154,111,210,110,216,153,154,155" shape="poly">
+      <area title="w" href="wtou.html" coords="101,121,143,121,136,170,100,165" shape="poly">
+      <area title="a" href="atou.html" coords="0,195,28,187,57,166,50,143,26,139,0,135" shape="poly">
+      <area title="35" href="35.html"
+        coords="2,201,30,197,72,205,96,211,96,238,106,251,117,265,114,295,102,314,74,313,41,311,2,309" shape="poly">
+      <area title="4" href="4tou.html" coords="217,127,219,145,267,169,262,130" shape="poly">
+    </map>
+  </div>
+  <script>
+    var ua = navigator.userAgent;
+    if (!(ua.indexOf('iPhone') > 0 || (ua.indexOf('Android') > 0) && (ua.indexOf('Mobile') > 0))) {
+      location.href = 'map.html';
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="map.gg.css">
+<title>d-salon.map1</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="change_button">
+        <a href="../3dmap/">3Dマップへ</a>
+      </div>
+      <a href="../">
+          <image src="image/logo.png" class="logo">
+      </a>
+    <div class="container">
+            <img src="image/map4.jpg" alt="map" usemap="#school-map" class="map">
+            <map name="school-map">
+                <area shape="rect" coords="201,303,254,384" alt="E棟" class="etou">
+                <area shape="rect" coords="87,182,119,380" alt="A棟" class="atou">
+                <area shape="rect" coords="51,400,156,477" alt="35周年記念館" class="35s">
+                <area shape="poly" coords="269,91, 286,90, 286,129, 303,130, 304,148, 287,149, 287,182, 269,183, 269,150, 252,150, 252,130, 269,129" alt="4棟" class="4tou">
+                <area shape="rect" coords="125,200, 194,296" alt="中庭" class="nakaniwa">
+                <area shape="rect" coords="214,94,243,178"　alt="北庭" class="kitaniwa">
+                <area shape="rect" coords="262,200,300,292" alt="建学の碑" class="sekihi">
+                <area shape="rect" coords="125,305,198,384" alt="芝生広場" class="hiroba">
+                <area shape="rect" coords="88,59,150,94" alt="6棟" class="6tou">
+                <area shape="poly" coords="291,296, 309,296, 308,351, 292,352, 292,384, 274,383, 274,328, 290,327" alt="学生センター" class="gakusen">
+                <area shape="rect" coords="194,200,254,283" alt="中央棟" class="tyuoutou">
+                <area shape="rect" coords="99,151,118,175" alt="研究所" class="kennkyu">
+                <area shape="rect" coords="150,100,206,180"　alt="西棟" class="nishi">
+                <area shape="rect" coords="183,402,291,543" alt="グラウンド" class="graundo">
+                <div class="map_switch">
+                    <a href="map.gg.html" class=gakugaimap><i class="fa fa-caret-right"></i>学外のマップはこちら</a>
+                </div>
+                <div class="comment">
+                    <image src="../board/img/dokuta.png" class="dokuta"></image>
+                  <p id="comment" class="left_balloon">学内について詳しく説明するよ。気になる建物をクリックしてね！</p>
+                </div>
+        </div>
+      </div>
+</body>
+
+<script>
+    $('img[usemap]').rwdImageMaps();
+    $(".etou").click(function(){
+        $("#comment").html("ここは東棟！<br>E棟とも呼ばれているよ！<br><br><a href='etou.html'>詳しくはこちら</a>");
+    });
+    $(".atou").click(function(){
+        $("#comment").html("ここは天野貞祐記念館！<br>A棟とも呼ばれているよ！<br><br><a href='atou.html'>詳しくはこちら</a>");
+    });
+    $(".35s").click(function(){
+        $("#comment").html("ここは35周年記念館！<br>学生食堂があるよ！<br><br><a href='35.html'>詳しくはこちら</a>");
+    });
+    $(".4tou").click(function(){
+        $("#comment").html("ここは4棟！<br>４階には模擬法廷教室があるよ!<br><br><a href='4tou.html'>詳しくはこちら</a>");
+    });
+    $(".nakaniwa").click(function(){
+        $("#comment").html("ここは中庭だよ！<br>緑が多く、獨協生の憩いの場になっているよ<br><br><a href='nsh.html'>詳しくはこちら</a>");
+    });
+    $(".sekihi").click(function(){
+        $("#comment").html("ここには建学の石碑があるよ！<br>何が書いてあるのかな、、？<br><br><a href='kg.html'>詳しくはこちら</a>");
+    });
+    $(".hiroba").click(function(){
+        $("#comment").html("ここは芝生広場！<br>夏になるとある生物が見られるかも、、？<br><br><a href='nsh.html'>詳しくはこちら</a>");
+    });
+    $(".6tou").click(function(){
+        $("#comment").html("ここは６棟だよ！<br><br><br><a href='6tou.html'>詳しくはこちら</a>");
+    });
+    $(".gakusen").click(function(){
+        $("#comment").html("ここは学生センター！<br>学生課や学生専用のラウンジがあるよ<br><br><a href='gs.html'>詳しくはこちら</a>");
+    });
+    $(".tyuoutou").click(function(){
+        $("#comment").html("ここは中央棟！<br>教授の研究室などがあるよ<br><br><a href='tyu.html'>詳しくはこちら</a>");
+    });
+    $(".nishi").click(function(){
+        $("#comment").html("ここは西棟！<br>授業で多く使われる棟だよ！<br><br><a href='wtou.html'>詳しくはこちら</a>");
+    });
+    $(".graundo").click(function(){
+        $("#comment").html("ここはグラウンド場！<br>スポーツレクリエーションの授業や部活動で使われるよ！<br><br><a href='gr.html'>詳しくはこちら</a>");
+    });
+    if ($(window).width() < 700){
+        $("#comment").html("学内について詳しく説明するよ。気になる建物をタップしてね！");
+    }
+
+</script>

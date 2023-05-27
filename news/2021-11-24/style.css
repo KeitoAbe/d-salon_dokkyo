@@ -1,0 +1,274 @@
+.logo {
+    width: inherit;
+    margin-bottom: 5px;
+    margin-top: 12px;
+    margin-left: 2px;
+}
+
+textarea {
+    font-size: 17px;
+    width: 100%;
+    height: 160px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    overflow: hidden;
+    word-break: normal;
+    white-space: pre-wrap;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+input[type="submit"],
+button {
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    width: 85px;
+    height: 40px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    margin-right: 0;
+    background-color: #94847b;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    background-color: #94847b;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+
+button {
+    color: #94847b;
+    background-color: #eee;
+}
+
+button:hover {
+    background-color: #eee;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.opinionForm {
+    max-width: 600px;
+}
+
+.submitBtn {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.opinion_message {
+    font-size: 1rem;
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.toppage {
+    width: 180px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* サークルのスタイル */
+
+.sns_circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #999;
+    float: left;
+    list-style: none;
+}
+
+
+/* Webフォントに関する指定 */
+
+.sns_circle span {
+    position: absolute;
+    padding: 10px;
+    font-size: 30px;
+    color: #979797;
+    /* 文字の色 */
+}
+
+
+/* リンク領域をブロック全体に */
+
+.sns_circle a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-indent: -999px;
+    color: #FFF;
+    /* 文字の色 */
+}
+
+
+/* マウスオーバー */
+
+.sns_circle a:hover {
+    background-color: #FFF;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+
+/* 横幅を300pxに固定して真ん中に表示 */
+
+ul.circle_group {
+    width: 240px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+/* アイコン毎の配色と配置 */
+
+.sns_circle {
+    background-color: #eee;
+}
+
+div img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+li {
+    font-size: 1.0rem;
+    padding-bottom: 10px;
+}
+
+.dokuko_img {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin: 0;
+    padding: 10px;
+
+}
+ul {
+    padding-left: 0px;
+}
+
+.about_dokuko {
+    margin: 20px 0 50px 0;
+}
+
+.attention {
+    border: 1px solid #94847b;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.attention p {
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-size: 20px;
+}
+footer {
+    background-color: #94847b;
+    color: #fff;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8rem;
+}
+
+body {
+    margin: 0;
+    color: #3f3f3f;
+}
+
+.wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.news_article{
+    background-color: #eee;
+    display: flex;
+    padding: 5px;
+}
+
+.news_article img {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.texts {
+    align-items: initial;
+    margin-left: 20px;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.texts p {
+    color: #716246;
+    font-size: 0.8rem;
+}
+
+.date{
+    font-size: 0.8rem !important;
+    color: #979797 !important;
+}
+
+.image {
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    .wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

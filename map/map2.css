@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color:#726250;
+  overflow: hidden;
+}
+
+.logo {
+  width: inherit;
+  margin-top: 22px;
+  margin-left: 2px;
+  margin-bottom: 20px;
+}
+
+area{
+  cursor: pointer;
+}
+
+body{
+  font-family: sans-serif;
+  padding: 0 16px;
+  background-image:
+  repeating-linear-gradient(to bottom,
+  transparent 25px,
+  rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+  transparent 27px,  transparent 51px,
+  rgba(0, 0, 0, 0.04)2px,  rgba(0, 0, 0, 0.04) 52px,
+  transparent 53px,  transparent 77px,
+  rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+  transparent 79px,  transparent 103px,
+  rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+  transparent 105px,  transparent 129px,
+  rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px),
+  repeating-linear-gradient(to right,
+  transparent 25px,
+  rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+  transparent 27px,  transparent 51px,
+  rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+  transparent 53px,  transparent 77px,
+  rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+  transparent 79px,  transparent 103px,
+  rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+  transparent 105px,  transparent 129px,
+  rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px);
+}
+
+.container {
+  margin-bottom: auto;
+  width: 100%;
+  position: relative;
+}
+
+.comment{
+  width: 100%;
+  font-weight: bold;
+  color: #94847b;
+  margin-top: 20px;
+  display: flex;
+}
+
+
+.dokuko{
+  width: auto;
+  height: 10vh;
+  margin-left: 5px;
+  transform: rotateY(180deg);
+}
+
+
+.left_balloon {
+  padding: 2vh;
+  width: 260px;
+  border-radius: 10px;
+
+  background: #f5deb3;
+ }
+
+
+.container img{
+  width: 100%;
+}
+
+
+a{
+  color: #856859;
+  font-weight: bold;
+}

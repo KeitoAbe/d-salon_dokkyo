@@ -1,0 +1,170 @@
+textarea {
+    font-size: 17px;
+    width: 100%;
+    height: 160px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.0rem;
+}
+
+p {
+    margin: 0;
+    line-height: 1.1rem;
+}
+
+input[type="submit"],
+button {
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    width: 85px;
+    height: 40px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    margin-right: 0;
+    background-color: #94847b;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    background-color: #94847b;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+
+button {
+    color: #94847b;
+    background-color: #eee;
+}
+
+button:hover {
+    background-color: #eee;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.opinionForm {
+    max-width: 600px;
+}
+
+.submitBtn {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.opinion_message {
+    font-size: 1rem;
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.toppage {
+    width: 180px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* サークルのスタイル */
+
+.sns_circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #999;
+    float: left;
+    list-style: none;
+}
+
+
+/* Webフォントに関する指定 */
+
+.sns_circle span {
+    position: absolute;
+    padding: 10px;
+    font-size: 30px;
+    color: #979797;
+    /* 文字の色 */
+}
+
+
+/* リンク領域をブロック全体に */
+
+.sns_circle a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-indent: -999px;
+    color: #FFF;
+    /* 文字の色 */
+}
+
+
+/* マウスオーバー */
+
+.sns_circle a:hover {
+    background-color: #FFF;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+
+/* 横幅を300pxに固定して真ん中に表示 */
+
+ul.circle_group {
+    width: 240px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+/* アイコン毎の配色と配置 */
+
+.sns_circle {
+    background-color: #eee;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}

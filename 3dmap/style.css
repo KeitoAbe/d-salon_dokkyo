@@ -1,0 +1,31 @@
+model-viewer {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #a0d8ef;
+}
+
+a {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 99;
+}
+
+.change_button a{
+  display: inline-block;
+    padding: 13px 50px;
+    color: #94847b;
+    line-height: 1.0em;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1.0rem;
+    text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+}

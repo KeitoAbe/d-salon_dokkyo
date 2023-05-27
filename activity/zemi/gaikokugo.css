@@ -1,0 +1,178 @@
+*{
+  box-sizing: border-box;
+}
+
+.logo {
+  width: inherit;
+  margin-top: 22px;
+  margin-left: 2px;
+}
+
+body{
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #716246;
+  background-image:
+  repeating-linear-gradient(to bottom,
+  transparent 25px,
+  rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+  transparent 27px,  transparent 51px,
+  rgba(0, 0, 0, 0.04)2px,  rgba(0, 0, 0, 0.04) 52px,
+  transparent 53px,  transparent 77px,
+  rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+  transparent 79px,  transparent 103px,
+  rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+  transparent 105px,  transparent 129px,
+  rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px),
+  repeating-linear-gradient(to right,
+  transparent 25px,
+  rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+  transparent 27px,  transparent 51px,
+  rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+  transparent 53px,  transparent 77px,
+  rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+  transparent 79px,  transparent 103px,
+  rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+  transparent 105px,  transparent 129px,
+  rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px);
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.item1 { 
+  width: 45%;
+  overflow:hidden;
+  margin-bottom: 1em;
+  border-radius: 30px;
+  border: 1px solid #999;
+  padding: 30px;
+  margin-bottom: 50px;
+  background-color:#fdf1c8;
+  text-align: center;
+}
+.item2 { 
+  width: 45%;
+  overflow:hidden;
+  margin-bottom: 1em;
+  border-radius: 30px;
+  border: 1px solid #999;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: #f4efec;
+  text-align: center;
+}
+.item3 { 
+  width: 45%;
+  overflow:hidden;
+  margin-bottom: 1em;
+  border-radius: 30px;
+  border: 1px solid #999;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color:#f8f4e6;
+  text-align: center;
+}
+.item4 { 
+  width: 45%;
+  overflow:hidden;
+  margin-bottom: 1em;
+  border-radius: 30px;
+  border: 1px solid #999;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color:#e3f7de;
+  text-align: center;
+}
+
+div img{
+  width: 80%;
+  padding: 10px 0;
+  display: block;
+  margin: 0 auto;
+}
+.container p{
+  text-align: center;
+  color: #716246;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: double 6px #716246;
+  display: block;
+  margin: 20px auto;
+} 
+
+.container h4{
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.4rem;
+}
+
+h2 {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 640px) {
+
+  body {
+    padding: 0 16px;
+  }
+
+  .item1 {
+    width: 100%;
+    overflow:hidden;
+    margin-bottom: 1em;
+    border-radius: 30px;
+    border: 1px solid #999;
+    padding: 10px 30px;
+    margin: 20px 0;
+
+  }
+  .item2 {
+    width: 100%;
+    overflow:hidden;
+    margin-bottom: 1em;
+    border-radius: 30px;
+    border: 1px solid #999;
+    padding: 10px 30px;
+    margin: 20px 0;
+  }
+  .item3 {
+    width: 100%;
+    overflow:hidden;
+    margin-bottom: 1em;
+    border-radius: 30px;
+    border: 1px solid #999;
+    padding: 10px 30px;
+    margin: 20px 0;
+  }
+  .item4 {
+    width: 100%;
+    overflow:hidden;
+    margin-bottom: 1em;
+    border-radius: 30px;
+    border: 1px solid #999;
+    padding: 10px 30px;
+    margin: 20px 0;
+  }
+
+  .container p {
+    text-align: center;
+    color: #716246;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: double 6px #716246;
+    width: 280px;
+    display: inline-block;
+  }
+
+  .container span{
+    font-size: 15px;
+  }
+}

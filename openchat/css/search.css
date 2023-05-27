@@ -1,0 +1,201 @@
+body {
+  margin: 0 auto;
+  background-image:
+  repeating-linear-gradient(to bottom,
+  transparent 25px,
+rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+  transparent 27px,  transparent 51px,
+rgba(0, 0, 0, 0.04)2px,  rgba(0, 0, 0, 0.04) 52px,
+  transparent 53px,  transparent 77px,
+rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+transparent 79px,  transparent 103px,
+rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+transparent 105px,  transparent 129px,
+rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px),
+repeating-linear-gradient(to right,
+transparent 25px,
+rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+transparent 27px,  transparent 51px,
+rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+transparent 53px,  transparent 77px,
+rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+transparent 79px,  transparent 103px,
+rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+transparent 105px,  transparent 129px,
+rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px);
+font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+.class {
+  font-weight: normal;
+  padding: 10px 4px 10px 4px;
+  text-align: left;
+  border: 1px solid #8a9aa4;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.search{
+  margin: 20px 5px 20px 5px;
+}
+.search_container{
+position: relative;
+box-sizing: border-box;
+border: 2px solid #8a9aa4;
+display: block;
+padding: 3px 10px;
+border-radius: 3px;
+height: 50px;
+overflow: hidden;
+background-color: #fff;
+}
+.search_container input[type="text"]{
+border: none;
+padding: 12px 0 12px 0;
+font-size: 16px;
+line-height: normal;
+-webkit-appearance: none;
+}
+.search_container input[type="text"]:focus {
+outline: 0;
+}
+.search_container input[type="submit"]{
+cursor: pointer;
+font-family: FontAwesome;
+border: none;
+background:#fff;
+color: #8a9aa4;
+position: absolute;
+padding: 1em;
+right:0px;
+outline : none;
+-webkit-appearance: none;
+border-radius: 0;
+line-height: normal;
+}
+.logo {
+margin: 13px 0 7px 15px;
+width: 120px;
+height: auto;
+}
+.swal-button--confirm {
+  background-color: #fdf1c8;
+  color: #94847b;
+}
+.swal-button--confirm:focus {
+  box-shadow:0 0 0 1px #fff,0 0 0 3px #fdf1c8;
+}
+.swal-button--confirm:hover{
+  background-color:  #fdf1c8!important;
+  opacity: 0.9;
+}
+.postQuestion {
+  margin: 15px 30px 25px 30px;
+  height: 80px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 80%;
+}
+.postQuestion img {
+  width: 70px;
+  height: auto;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  margin-right: 3.5vw;
+}
+.postQuestion p {
+  text-align: center;
+  color: #94847b;
+  font-size: 1.1em;
+  grid-column: 2/4;
+  grid-row: 1/2;
+  margin: 5px;
+  white-space: nowrap;
+}
+.post {
+  text-align: center;
+}
+.postQuestion a {
+  display: inline-block;
+  padding: 13px 17vw;
+  color: #94847b;
+  line-height: 1.0em;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: #fdf1c8;
+  font-weight: bold;
+  font-size: 1.0rem;
+  text-decoration: none;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  white-space: nowrap;
+}
+.class_list{
+  margin: 20px;
+}
+header {
+  height: 53px;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 8;
+  border-bottom: 1px solid #eee;
+}
+.back {
+  text-decoration: none;
+  color: #94847b;
+  font-weight: bold;
+  display: block;
+  padding: 15px 22px 15px 22px;
+  float: left;
+}
+.do_tweet {
+  font-weight: bold;
+  margin-left: 71px;
+}
+.container{
+  padding-top: 55px;
+}
+.home-icon {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 11px 60px 7px 15px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+.container {
+  padding-top: 55px;
+}
+.paging li{
+  background-color: #fff;
+}
+ul.paging{
+  margin-bottom: 20px;
+}
+#input {
+  width: 100%;
+}
+.toroku{
+  max-width: 650px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.search_container input[type="text"]{
+padding: 9px 0 9px 0;
+}
+}
+@media only screen and (min-width: 650px){
+.postQuestion a {
+    padding: 13px 150px;
+}
+.t_container{
+  max-width: 650px;
+  margin: 0 auto;
+}
+}

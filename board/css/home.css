@@ -1,0 +1,231 @@
+.btn {
+    color: #999;
+    font-size: 1.0rem;
+}
+
+.active {
+    color: #f44336;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fee48d;
+    text-align: center;
+    line-height: 80px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
+    line-height: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.circle a {
+    color: #ffffff;
+}
+
+header {
+    height: 0px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 0px;
+}
+
+img.logo {
+    margin: 13px 0 7px 15px;
+    width: 120px;
+    height: auto;
+}
+
+.home {
+    font-weight: bold;
+    margin-left: 68px;
+}
+
+.home-icon {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 11px 60px 7px 15px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.twitter__block {
+    position: relative;
+    z-index: 1;
+}
+
+.message {
+    padding-top: 5px;
+}
+
+.twitter__block a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.menu.open {
+    transform: translate(0);
+    transition: 0.3s ease-out;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay.open {
+    display: block
+}
+
+.postQuestion {
+    margin: 15px 30px 5px 30px;
+    height: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.postQuestion img {
+    width: 70px;
+    height: auto;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-right: 3.5vw;
+}
+
+.postQuestion p {
+    text-align: center;
+    color: #94847b;
+    font-size: 1.1em;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    margin: 5px;
+}
+
+.postQuestion a {
+    display: inline-block;
+    padding: 13px 17vw;
+    color: #94847b;
+    line-height: 1.0em;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #fdf1c8;
+    font-weight: bold;
+    font-size: 1.0rem;
+    text-decoration: none;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.post {
+    text-align: center;
+}
+
+.topic-display {
+    padding-top: 5px;
+    font-size: 0.8em;
+    color: #8a9aa4;
+}
+
+.topic-select {
+    padding-top: 4px;
+    margin-left: auto;
+    display: flex;
+}
+
+.fa-check-circle {
+    padding-top: 16px;
+    color: skyblue;
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-bottom: #eee solid 1px;
+}
+
+.twitter__container {
+    padding-top: 55px;
+}
+
+@media only screen and (min-width: 800px) {
+    .circle {
+        display: none;
+    }
+    .twitter__contents {
+        margin-top: 0px;
+    }
+    .home {
+        margin-left: 15px;
+    }
+    .tweet {
+        position: absolute;
+        top: 215px;
+        margin-left: 410px;
+    }
+    .twitter__container {
+        border-top: 1px solid #eee;
+    }
+    form {
+        height: 205px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .message {
+        display: none;
+    }
+    header {
+        max-width: 970px;
+    }
+    form {
+        display: none;
+    }
+}
+
+.twitter__container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 650px) {
+    textarea {
+        max-width: 530px;
+    }
+    .postQuestion {
+        margin: 20px;
+    }
+    .postQuestion a {
+        padding: 13px 150px;
+    }
+}

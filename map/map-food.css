@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color:#726250;
+}
+
+
+body {
+  padding: 50px 100px;
+  background-image:
+  repeating-linear-gradient(to bottom,
+    transparent 25px,
+    rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+    transparent 27px,  transparent 51px,
+    rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+    transparent 53px,  transparent 77px,
+    rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+    transparent 79px,  transparent 103px,
+    rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+    transparent 105px,  transparent 129px,
+    rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px),
+
+  repeating-linear-gradient(to right,
+    transparent 25px,
+    rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+    transparent 27px,  transparent 51px,
+    rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+    transparent 53px,  transparent 77px,
+    rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+    transparent 79px,  transparent 103px,
+    rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+    transparent 105px,  transparent 129px,
+    rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px);
+}
+
+.serif-left {
+ position: relative;
+ padding: 2vh;
+ border-radius: 10px;　//吹き出しの形を変更できます
+ margin-top: 4vh;
+ margin-bottom: 3vh;
+ background: #f5deb3;　
+}
+
+.balloon{
+  display: flex;
+ float: left;
+}
+.dokuta{
+  width: 100px;
+  margin-left: 10vh;
+  transform: rotateY(180deg);
+}
+
+.flex{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.more{
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+  .contant {
+    display:inline-block;
+    margin-top: 50px;
+    padding: 1.5rem;
+    border: 2px solid #726250;
+    background: #fff;
+  }
+
+
+  .contant span,
+  .contant h2 {
+    z-index: 1;
+  }
+
+h2{
+    width: 350px;
+  background: linear-gradient(transparent 50%, yellow 50%);
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: center;
+  }
+
+.shop{
+  display: flex;
+  margin-right: 2vh;
+   align-items: flex-start;
+}
+.shop-image{
+margin-left: auto;
+margin-top: auto;
+}

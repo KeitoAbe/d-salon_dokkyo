@@ -1,0 +1,101 @@
+.container {
+    margin: 0 18px;
+    padding-top: 70px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    font-size: 17px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 50px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 17px;
+}
+
+.twitter__container {
+    border-bottom: 1px solid #fff;
+}
+
+.error {
+    text-align: left;
+    font-size: 1.0rem;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.acount-register {
+    text-decoration: none;
+}
+
+.acount {
+    text-align: center;
+}
+
+.home {
+    font-weight: bold;
+    margin-left: 12px;
+    float: left;
+}
+
+header {
+    height: 53px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+}
+
+.save {
+    float: right;
+}
+
+.icon {
+    position: relative;
+}
+
+.icon img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* inputは隠す */
+
+.upload-label input {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    font-size: 1.0rem;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.t_container {
+    background-color: #fff;
+}

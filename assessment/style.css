@@ -1,0 +1,1002 @@
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
+/* Reset box-model and set borders */
+/* ============================================ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+
+/**
+ * Prevent vertical alignment issues.
+ */
+
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+  border: 1px solid #555;
+  padding: 5px 10px;
+}
+
+select {
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+  appearance: menulist;
+  background-color: #fff;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+  height: 130px;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*--------------------------------ここから----------------------------------------*/
+
+
+body {
+  margin: 10px 18px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+	font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+  background-image: repeating-linear-gradient(to bottom, transparent 25px, rgba(0, 0, 0, 0.04) 26px, rgba(0, 0, 0, 0.04) 26px, transparent 27px, transparent 51px, rgba(0, 0, 0, 0.04)2px, rgba(0, 0, 0, 0.04) 52px, transparent 53px, transparent 77px, rgba(0, 0, 0, 0.04) 78px, rgba(0, 0, 0, 0.04) 78px, transparent 79px, transparent 103px, rgba(0, 0, 0, 0.04) 104px, rgba(0, 0, 0, 0.04) 104px, transparent 105px, transparent 129px, rgba(0, 0, 0, 0.04) 130px, rgba(0, 0, 0, 0.04) 130px), repeating-linear-gradient(to right, transparent 25px, rgba(0, 0, 0, 0.04) 26px, rgba(0, 0, 0, 0.04) 26px, transparent 27px, transparent 51px, rgba(0, 0, 0, 0.04) 52px, rgba(0, 0, 0, 0.04) 52px, transparent 53px, transparent 77px, rgba(0, 0, 0, 0.04) 78px, rgba(0, 0, 0, 0.04) 78px, transparent 79px, transparent 103px, rgba(0, 0, 0, 0.04) 104px, rgba(0, 0, 0, 0.04) 104px, transparent 105px, transparent 129px, rgba(0, 0, 0, 0.04) 130px, rgba(0, 0, 0, 0.04) 130px);
+}
+
+header{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  margin: -10px -18px;
+  padding: 0;
+  z-index: 99;
+}
+.success_message{
+  margin-top: 50px;
+  color: #3CB371;
+}
+.error_message{
+  margin-top: 20px;
+  color: red;
+}
+/*
+hamburger(ハンバーガーアイコン)
+=================================== */
+.hamburger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 300;
+}
+.hamburger__line {
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    right: 0;
+    background-color: #94847b;
+    transition: all 0.5s;
+}
+.hamburger__line--1 {
+    top: 1px;
+}
+.hamburger__line--2 {
+    top: 13px;
+}
+.hamburger__line--3 {
+    top: 26px;
+}
+/*ハンバーガーがクリックされたら*/
+.open .hamburger__line--1 {
+    transform: rotate(-45deg);
+    top: 11px;
+    background-color: white;
+}
+.open .hamburger__line--2 {
+    opacity: 0;
+}
+.open .hamburger__line--3 {
+    transform: rotate(45deg);
+    top: 11px;
+    background-color: white;
+}
+/*
+sp-nav(ナビ)
+  =================================== */
+.sp-nav {
+    position: fixed;
+    right: -100%; /*ハンバーガーがクリックされる前はWindow右側に隠す*/
+    top: 0;
+    width: 50%; /* 出てくるスライドメニューの幅 */
+    height: 100vh;
+    background: #94847be4;
+    transition: all 0.5s;
+    z-index: 200;
+    overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+}
+.sp-nav ul li{
+  padding-left: 50px;
+}
+/*ハンバーガーがクリックされたら右からスライド*/
+.open .sp-nav {
+    right: 0;
+}
+/*
+black-bg(ハンバーガーメニュー解除用bg)
+  =================================== */
+.black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 100;
+}
+/*ハンバーガーメニューが開いたら表示*/
+.open .black-bg {
+    opacity: 0.3;
+    visibility: visible;
+}
+.sp-nav ul{
+   margin-top: 70px;
+}
+.sp-nav ul li{
+  padding-top:20px; 
+  margin-bottom: 50px;
+  font:20px bold;
+  display: block;
+  cursor: pointer;
+  color: white;
+}
+.watch{
+  padding-top: 20px;
+  max-width: 650px;
+}
+.watch article{
+  padding-bottom:30px;
+  display: block;
+  border:1px solid black ;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  position: relative;
+}
+.watch article .sub_info .lesson_info{
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.watch article .sub_info .other p{
+  margin-top: 10px;
+}
+.watch article .sub_info div p{
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+.watch article .sub_info .lesson_info p{
+  margin-top: 20px;
+}
+
+.watch article .message{
+  margin-top: 20px;
+  font-weight: bolder;
+}
+.watch .info{
+  display:flex;
+  margin-bottom: 10px;
+}
+.watch .info .view_name{
+  padding-top: 5px;
+}
+.watch .info time{
+  padding-left:20px;
+}
+main h1{
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #94847b;
+}
+
+main form div{
+  margin-top: 10px;
+}
+
+main form input{
+  height: 40px;
+}
+
+label{
+  font-size: 20px;
+}
+form div{
+  padding-bottom: 20px;
+}
+.watch article .info h2{
+  font-size: 20px;
+  width: 150px;
+}
+.watch article .info time{
+  font-size: 10px;
+  padding-top: 3px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+.swal-button--confirm {
+    background-color: #fdf1c8;
+    color: #94847b;
+}
+
+.swal-button--confirm:focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #fdf1c8;
+}
+
+.swal-button--confirm:hover {
+    background-color: #fdf1c8!important;
+    opacity: 0.9;
+}
+
+textarea , .text{
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  max-height: 170px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #555;
+  font-size: 17px;
+  outline: none;
+  line-height: 1.6;
+  resize: vertical;
+  margin-top: 15px;
+  background-color: #fafafa;
+  max-width: 300px;
+}
+textarea:focus , .text:focus {
+    border: 2px solid #999; 
+    z-index: 10;
+    outline: 0;
+}
+
+.toukou{
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    position : relative ;
+    text-decoration : none ;
+    width : 240px ;
+    height : 64px ;
+    font-size : 24px ;
+    background-color: #fdf1c8;
+    color: #94847b;
+    letter-spacing : 8px ;
+    font-family: 'Kite One', sans-serif;
+    text-shadow : 1px 1px 2px transparent, 
+        -1px -1px 2px transparent, 
+        -1px 1px 2px transparent, 
+        1px -1px 2px transparent,
+        1px 1px 30px var(--color_4),
+        -1px -1px 30px var(--color_4),
+        -1px 1px 30px var(--color_4),
+        1px -1px 30px var(--color_4),
+        1px 1px 50px var(--color_6),
+        -1px -1px 50px var(--color_6),
+        -1px 1px 50px var(--color_6),
+        1px -1px 50px var(--color_6);
+    box-sizing : border-box ;
+    border-radius : 12px ;
+    border : solid 2px #555 ;
+    box-shadow : 0 0 4px transparent,
+        0 0 4px transparent inset,
+        0 0 20px var(--color_4),
+        0 0 20px var(--color_4) inset,
+        0 0 48px var(--color_6),
+        0 0 64px var(--color_6) inset;
+    --color_1 : rgba(30,255,50,.8) ;
+    --color_2 : rgba(30,255,50,.6)  ;
+    --color_3 : rgba(30,255,50,.3) ;
+    --color_4 : rgba(30,255,50,0)   ;
+    --color_5 : rgba(10,150,0,.3) ;
+    --color_6 : rgba(10,150,0,0)  ;
+}
+.toukou:hover{
+    animation : lights 1.4s linear ;
+    animation-fill-mode : forwards ;
+}
+
+.toukou input {
+  border: none;
+}
+
+.loginBtn {
+  padding-top: 0;
+  
+}
+
+@keyframes lights {
+    0%{
+        box-shadow : 0 0 4px transparent,
+        0 0 4px transparent inset,
+        0 0 20px var(--color_4),
+        0 0 20px var(--color_4) inset,
+        0 0 48px var(--color_6),
+        0 0 64px var(--color_6) inset;
+        text-shadow : 1px 1px 2px transparent, 
+        -1px -1px 2px transparent, 
+        -1px 1px 2px transparent, 
+        1px -1px 2px transparent,
+        1px 1px 30px var(--color_4),
+        -1px -1px 30px var(--color_4),
+        -1px 1px 30px var(--color_4),
+        1px -1px 30px var(--color_4),
+        1px 1px 50px var(--color_6),
+        -1px -1px 50px var(--color_6),
+        -1px 1px 50px var(--color_6),
+        1px -1px 50px var(--color_6);
+        color : #555 ;
+        border-color : #555 ;
+    }
+    2%{
+        box-shadow : 0 0 4px transparent,
+        0 0 4px transparent inset,
+        0 0 20px var(--color_4),
+        0 0 20px var(--color_4) inset,
+        0 0 48px var(--color_6),
+        0 0 64px var(--color_6) inset;
+        text-shadow : 1px 1px 2px transparent, 
+        -1px -1px 2px transparent, 
+        -1px 1px 2px transparent, 
+        1px -1px 2px transparent,
+        1px 1px 30px var(--color_4),
+        -1px -1px 30px var(--color_4),
+        -1px 1px 30px var(--color_4),
+        1px -1px 30px var(--color_4),
+        1px 1px 50px var(--color_6),
+        -1px -1px 50px var(--color_6),
+        -1px 1px 50px var(--color_6),
+        1px -1px 50px var(--color_6);
+        color : #555 ;
+        border-color : #555 ;
+    }
+    3%{
+        box-shadow : 0 0 4px var(--color_1),
+        0 0 4px var(--color_1) inset,
+        0 0 20px var(--color_2),
+        0 0 20px var(--color_2) inset,
+        0 0 48px var(--color_5),
+        0 0 64px var(--color_5) inset;
+        text-shadow : 1px 1px 2px var(--color_1), 
+        -1px -1px 2px var(--color_1), 
+        -1px 1px 2px var(--color_1), 
+        1px -1px 2px var(--color_1),
+        1px 1px 30px var(--color_3),
+        -1px -1px 30px var(--color_3),
+        -1px 1px 30px var(--color_3),
+        1px -1px 30px var(--color_3),
+        1px 1px 50px var(--color_5),
+        -1px -1px 50px var(--color_5),
+        -1px 1px 50px var(--color_5),
+        1px -1px 50px var(--color_5);
+        color : #fff ;
+        border-color : #fff ;
+    }
+    5%{
+        box-shadow : 0 0 4px var(--color_1),
+        0 0 4px var(--color_1) inset,
+        0 0 20px var(--color_2),
+        0 0 20px var(--color_2) inset,
+        0 0 48px var(--color_5),
+        0 0 64px var(--color_5) inset;
+        text-shadow : 1px 1px 2px var(--color_1), 
+        -1px -1px 2px var(--color_1), 
+        -1px 1px 2px var(--color_1), 
+        1px -1px 2px var(--color_1),
+        1px 1px 30px var(--color_3),
+        -1px -1px 30px var(--color_3),
+        -1px 1px 30px var(--color_3),
+        1px -1px 30px var(--color_3),
+        1px 1px 50px var(--color_5),
+        -1px -1px 50px var(--color_5),
+        -1px 1px 50px var(--color_5),
+        1px -1px 50px var(--color_5);
+        color : #fff ;
+        border-color : #fff ;
+    }
+    6%{
+        box-shadow : 0 0 4px transparent,
+        0 0 4px transparent inset,
+        0 0 20px var(--color_4),
+        0 0 20px var(--color_4) inset,
+        0 0 48px var(--color_6),
+        0 0 64px var(--color_6) inset;
+        text-shadow : 1px 1px 2px transparent, 
+        -1px -1px 2px transparent, 
+        -1px 1px 2px transparent, 
+        1px -1px 2px transparent,
+        1px 1px 30px var(--color_4),
+        -1px -1px 30px var(--color_4),
+        -1px 1px 30px var(--color_4),
+        1px -1px 30px var(--color_4),
+        1px 1px 50px var(--color_6),
+        -1px -1px 50px var(--color_6),
+        -1px 1px 50px var(--color_6),
+        1px -1px 50px var(--color_6);
+        color : #555 ;
+        border-color : #555 ;
+    }
+    12%{
+        box-shadow : 0 0 4px transparent,
+        0 0 4px transparent inset,
+        0 0 20px var(--color_4),
+        0 0 20px var(--color_4) inset,
+        0 0 48px var(--color_6),
+        0 0 64px var(--color_6) inset;
+        text-shadow : 1px 1px 2px transparent, 
+        -1px -1px 2px transparent, 
+        -1px 1px 2px transparent, 
+        1px -1px 2px transparent,
+        1px 1px 30px var(--color_4),
+        -1px -1px 30px var(--color_4),
+        -1px 1px 30px var(--color_4),
+        1px -1px 30px var(--color_4),
+        1px 1px 50px var(--color_6),
+        -1px -1px 50px var(--color_6),
+        -1px 1px 50px var(--color_6),
+        1px -1px 50px var(--color_6);
+        color : #555 ;
+        border-color : #555 ;
+    }
+    13%{
+        box-shadow : 0 0 4px var(--color_1),
+        0 0 4px var(--color_1) inset,
+        0 0 20px var(--color_2),
+        0 0 20px var(--color_2) inset,
+        0 0 48px var(--color_5),
+        0 0 64px var(--color_5) inset;
+        text-shadow : 1px 1px 2px var(--color_1), 
+        -1px -1px 2px var(--color_1), 
+        -1px 1px 2px var(--color_1), 
+        1px -1px 2px var(--color_1),
+        1px 1px 30px var(--color_3),
+        -1px -1px 30px var(--color_3),
+        -1px 1px 30px var(--color_3),
+        1px -1px 30px var(--color_3),
+        1px 1px 50px var(--color_5),
+        -1px -1px 50px var(--color_5),
+        -1px 1px 50px var(--color_5),
+        1px -1px 50px var(--color_5);
+        color : #fff ;
+        border-color : #fff ;
+    }
+    14%{
+        box-shadow : 0 0 4px var(--color_1),
+        0 0 4px var(--color_1) inset,
+        0 0 20px var(--color_2),
+        0 0 20px var(--color_2) inset,
+        0 0 48px var(--color_5),
+        0 0 64px var(--color_5) inset;
+        text-shadow : 1px 1px 2px var(--color_1), 
+        -1px -1px 2px var(--color_1), 
+        -1px 1px 2px var(--color_1), 
+        1px -1px 2px var(--color_1),
+        1px 1px 30px var(--color_3),
+        -1px -1px 30px var(--color_3),
+        -1px 1px 30px var(--color_3),
+        1px -1px 30px var(--color_3),
+        1px 1px 50px var(--color_5),
+        -1px -1px 50px var(--color_5),
+        -1px 1px 50px var(--color_5),
+        1px -1px 50px var(--color_5);
+        color : #fff ;
+        border-color : #fff ;
+    }
+    17%{
+        box-shadow : 0 0 4px transparent,
+        0 0 4px transparent inset,
+        0 0 20px var(--color_4),
+        0 0 20px var(--color_4) inset,
+        0 0 48px var(--color_6),
+        0 0 64px var(--color_6) inset;
+        text-shadow : 1px 1px 2px transparent, 
+        -1px -1px 2px transparent, 
+        -1px 1px 2px transparent, 
+        1px -1px 2px transparent,
+        1px 1px 30px var(--color_4),
+        -1px -1px 30px var(--color_4),
+        -1px 1px 30px var(--color_4),
+        1px -1px 30px var(--color_4),
+        1px 1px 50px var(--color_6),
+        -1px -1px 50px var(--color_6),
+        -1px 1px 50px var(--color_6),
+        1px -1px 50px var(--color_6);
+        color : #555 ;
+        border-color : #555 ;
+    }
+    40%{
+        box-shadow : 0 0 4px transparent,
+        0 0 4px transparent inset,
+        0 0 20px var(--color_4),
+        0 0 20px var(--color_4) inset,
+        0 0 48px var(--color_6),
+        0 0 64px var(--color_6) inset;
+        text-shadow : 1px 1px 2px transparent, 
+        -1px -1px 2px transparent, 
+        -1px 1px 2px transparent, 
+        1px -1px 2px transparent,
+        1px 1px 30px var(--color_4),
+        -1px -1px 30px var(--color_4),
+        -1px 1px 30px var(--color_4),
+        1px -1px 30px var(--color_4),
+        1px 1px 50px var(--color_6),
+        -1px -1px 50px var(--color_6),
+        -1px 1px 50px var(--color_6),
+        1px -1px 50px var(--color_6);
+        color : #555 ;
+        border-color : #555 ;
+    }
+    41%{
+        box-shadow : 0 0 4px var(--color_1),
+        0 0 4px var(--color_1) inset,
+        0 0 20px var(--color_2),
+        0 0 20px var(--color_2) inset,
+        0 0 48px var(--color_5),
+        0 0 64px var(--color_5) inset;
+        text-shadow : 1px 1px 2px var(--color_1), 
+        -1px -1px 2px var(--color_1), 
+        -1px 1px 2px var(--color_1), 
+        1px -1px 2px var(--color_1),
+        1px 1px 30px var(--color_3),
+        -1px -1px 30px var(--color_3),
+        -1px 1px 30px var(--color_3),
+        1px -1px 30px var(--color_3),
+        1px 1px 50px var(--color_5),
+        -1px -1px 50px var(--color_5),
+        -1px 1px 50px var(--color_5),
+        1px -1px 50px var(--color_5);
+        color : #fff ;
+        border-color : #fff ;
+    }
+    100%{
+        box-shadow : 0 0 4px var(--color_1),
+        0 0 4px var(--color_1) inset,
+        0 0 20px var(--color_2),
+        0 0 20px var(--color_2) inset,
+        0 0 48px var(--color_5),
+        0 0 64px var(--color_5) inset;
+        text-shadow : 1px 1px 2px var(--color_1), 
+        -1px -1px 2px var(--color_1), 
+        -1px 1px 2px var(--color_1), 
+        1px -1px 2px var(--color_1),
+        1px 1px 30px var(--color_3),
+        -1px -1px 30px var(--color_3),
+        -1px 1px 30px var(--color_3),
+        1px -1px 30px var(--color_3),
+        1px 1px 50px var(--color_5),
+        -1px -1px 50px var(--color_5),
+        -1px 1px 50px var(--color_5),
+        1px -1px 50px var(--color_5);
+        color : #fff ;
+        border-color : #fff ;
+    }
+}

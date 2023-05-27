@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="map.css">
+  <title>d-salon.map1</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <a href="../">
+      <image src="image/logo.png" class="logo">
+    </a>
+  </div>
+
+  <img src=" image/dokuta.png" class="dokuko">
+  <div class="comment">
+    <p id="comment" class="left_balloon">気になる建物をタップしてね！施設の紹介ページにとぶよ。</p>
+  </div>
+
+
+  <div class="container">
+
+    <img src="image/sotsuron2.png" usemap="#image-map">
+
+    <map name="image-map">
+      <area title="e-tou" href="etou.html" coords="758,310,456,141" shape="rect">
+      <area title="tyuou-tou" href="tyu.html" coords="666,134,514,13" shape="rect">
+      <area title="w-tou" href="wtou.html" coords="509,138,385,6" shape="rect">
+      <area title="gakusen" href="gs.html" coords="993,326,825,87" shape="rect">
+      <area title="4-tou" href="4tou.html" coords="669,25,800,138" shape="rect">
+      <area title="6-tou" href="6tou.html" coords="227,4,381,101" shape="rect">
+      <area title="a-tou" href="atou.html"
+        coords="179,81,161,85,133,86,117,97,103,108,87,118,68,133,48,151,20,170,12,192,16,230,17,245,25,265,95,235,143,217,179,215,195,208,215,214,245,217,262,219,278,200,287,188,293,157,282,109,227,112,212,87"
+        shape="poly">
+      <area title="35" href="35.html"
+        coords="-1,276,40,275,80,258,136,236,195,227,287,233,338,245,382,270,391,306,409,355,443,366,436,425,433,445,13,447,1,416"
+        shape="poly">
+      <area title="ground" href="gr.html" coords="997,445,465,348" shape="rect">
+    </map>
+  </div>
+  </div>
+
+</body>

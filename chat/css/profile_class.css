@@ -1,0 +1,55 @@
+.profile-tab ul {
+    grid-template-columns: 1fr;
+}
+
+.profile-tab li:nth-of-type(1) {
+    color: #94847b;
+    border-bottom: 2px solid #94847b;
+}
+
+.profile-tab {
+    height: 20px;
+}
+
+.class_list {
+    margin: 20px;
+}
+
+.class {
+    font-weight: normal;
+    padding: 10px 4px 10px 4px;
+    text-align: left;
+    border: 1px solid #8a9aa4;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.btn_open {
+    padding: 3px 10px;
+}
+
+.tweet_delete {
+    left: 450px;
+    margin-top: 0;
+}
+
+.btn-menu {
+    position: absolute;
+    right: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .tweet_delete {
+        left: calc(100vw - 195px);
+    }
+    .slide-menu p {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .profile a {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,34 @@
+header {
+    border-bottom: none;
+    border-bottom: #eee solid 1px;
+}
+
+.notify {
+    background-color: #fdf1c8;
+    color: #94847b;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    padding: 5px;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 5px;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.no_register {
+    text-align: center;
+    color: #94847b;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 3.2rem;
+}

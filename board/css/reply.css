@@ -1,0 +1,144 @@
+.btn {
+    color: #999;
+    font-size: 1.0rem;
+}
+
+.active {
+    color: #f44336;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    height: 53px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.reply {
+    float: right;
+}
+
+.message_icon img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px 0 0 8px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    object-fit: cover;
+}
+
+.message {
+    display: flex;
+    margin-left: 5px;
+    position: relative;
+}
+
+textarea {
+    margin-top: 15px;
+    margin-left: 5px;
+    border: 1px solid #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    width: calc(100vw - 80px);
+    max-width: 970px;
+    position: absolute;
+    height: 130px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.upload-label {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 6px;
+    color: #94847b;
+    line-height: 1.0em;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    font-size: 1.6rem;
+}
+
+
+/* inputは隠す */
+
+.upload-label input {
+    display: none;
+}
+
+.tokumei-box {
+    padding-top: 103px;
+    padding-left: 103px;
+}
+
+.preview {
+    position: absolute;
+    top: 190px;
+    left: 15px;
+}
+
+.preview img {
+    border-radius: 20px;
+    margin: 5px 0;
+    width: 95%;
+    max-width: 500px;
+}
+
+.twitter__contents {
+    margin-top: 53px;
+    margin-bottom: 0px;
+}
+
+.twitter__block {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.twitter__container {
+    border-bottom: 1px solid #fff;
+}
+
+.reply-line {
+    display: block;
+    border-left: rgb(196, 207, 214) solid 2px;
+    height: 30px;
+    margin-left: 37px;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    color: #8a9aa4;
+}
+
+.reply-line a {
+    text-decoration: none;
+    color: #94847b;
+}
+
+.reply-line p {
+    margin: 0;
+    font-size: 80%;
+    padding-top: 5px;
+}
+
+.t_container {
+    background-color: #fff;
+}
+
+@media only screen and (min-width: 800px) {
+    .twitter__contents {
+        margin-top: 0;
+    }
+    .twitter__block {
+        margin-top: 53px;
+    }
+    textarea {
+        max-width: 570px;
+    }
+}

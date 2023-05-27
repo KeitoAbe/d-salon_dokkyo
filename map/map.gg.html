@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="map.gg.css">
+<title>d-salon.map2</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+<div class="wrapper">
+<a href="../">
+    <image src="image/logo.png" class="logo">
+</a>
+    <div class="container">
+            <img src="image/map.gg2.png" alt="map" usemap="#image-map" class="map">
+
+            <map name="image-map">
+                <area alt="Pandy Bakery" class="purple" coords="272,52,12" shape="circle">
+                <area alt="PUNJABI" class="beige" coords="296,63,13" shape="circle">
+                <area alt="ファゼンダ（ベルクス）" class="green" coords="133,339,10" shape="circle">
+                <area alt="ファイブ" class="orange" coords="114,372,9" shape="circle">
+                <area alt="マウンテン" class="sky" coords="95,372,9" shape="circle">
+                <area alt="ひまわり弁当" class="yellow" coords="71,343,8" shape="circle">
+                <area  alt="加賀海" class="blue" coords="68,362,8" shape="circle">
+                <area alt="ヤマト屋"  class="emerald" coords="44,370,9" shape="circle">
+                <area alt="乃が美" class="red" coords="134,398,10" shape="circle">
+                <area alt="花ゆらい" class="yellowgreen" coords="327,489,9" shape="circle">
+                <area  alt="日高屋" class="pink" coords="328,532,9" shape="circle">
+                <area alt="DONA" class="brown" coords="350,531,10" shape="circle">
+            </map>
+            <div class="map_switch">
+                <a href="map.gn.html"><i class="fa fa-caret-right"></i>学内のマップはこちら</a>
+            </div>
+
+            <div class="comment">
+                <image src="../board/img/dokuta.png" class="dokuta"></image>
+                  <p id="comment" class="left_balloon"><span>大学近くのオススメスポットを紹介するよ。色のついた丸をクリックしてね。</span></p>
+                </div>
+        </div>
+      </div>
+</body>
+
+<script>
+    $('img[usemap]').rwdImageMaps();
+    $(".purple").click(function(){
+        $("#comment").html("<b>Pandy Bakery</b> <p>「楽しいパン屋さん」がコンセプトのパン屋さんです。お子様からご年配の方全ての年代が食べられるように、通常のパンに加え卵・乳製品不使用のパンも多く販売されているのが特徴的です。店内も可愛いのでぜひ一度行ってみてはいかがでしょうか。</p><span>定休日</span>：月曜日<br><span>営業時間</span>：[火～土] 7:00～18:00 [日・祝] 7:00～15:00<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".beige").click(function(){
+        $("#comment").html("<b>PUNJABI</b><p>インド通も太鼓判を押す本格的なインド料理店です。ランチは一律750円で曜日ごとに違うカレーを楽しむことが出来ます。ディナーには不定期でダンスショーが開催されるそうです。</p><span>定休日</span>：月曜日・その他不定休<br><span>営業時間</span>：[火～土] 7:00～18:00 [日・祝] 7:00～15:00<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".green").click(function(){
+        $("#comment").html("<b>ファゼンダ</b><p>世界各国のコーヒーを味わうことのできるコーヒー専門店です。11:30-15:00までは、サラダ・デザート・ドリンクがついたランチを700円からいただくことが出来ます。</p><span>定休日</span>：不定休<br><span>営業時間</span>：10:00〜19:00<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".orange").click(function(){
+        $("#comment").html("<b>Φve ファイブ</b><p>つけ麺を看板メニューとしているラーメン屋さんです。ここのお店の特徴はつけ麺だけに限らず、二郎系や鶏白湯など様々なラーメンを楽しめることです。もちっとした食感の「自家製麺」と硬さが特徴の「ちぃ麺」二種から選ぶことが出来るのも魅力です。</p><span>定休日</span>：水曜日・毎月第3木曜日 <br><span>営業時間</span>：11:30～21:00/火曜日のみ11:30～15:00<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".sky").click(function(){
+        $("#comment").html("<b>アジアンレストラン＆バー マウンテン</b><p>ここでは本格的なネパール料理やインド料理を堪能することが出来ます。ランチはなんと、カレーとナン（orライス）、サラダ、ドリンクで７００円～カレーの辛さが選ぶことが出来たり、ナン（ライス）がお代わり無料だったりと学生には嬉しい。店内も広く、裏門から徒歩5分と近いのでランチに行ってみてはいかがでしょうか。</p><span>定休日</span>：不定休<br><span>営業時間</span>：月曜～日曜 11:00～15：00　17：00～22：00<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".yellow").click(function(){
+        $("#comment").html("<b>ひまわり弁当</b><p>西門から出て徒歩3分のところにあるのがこのひまわり弁当です。ひまわり弁当の魅力は何といってもその値段！店頭にあるお弁当を各種324円で食べることが出来る学生にはありがたいお弁当屋さんです。21種の通常メニューと5種の日替わりメニューは324円とは思えないほどのボリュームと美味しさで毎日通いたくなるお店です。大盛弁当は税込388円。一品惣菜は税込32円～です。</p><span>定休日</span>：日曜日<br><span>営業時間</span>：11:00～18:00(売切次第終了)<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".blue").click(function(){
+        $("#comment").html("<b>加賀海</b><p>2013年からある海鮮料理がメインの居酒屋さんです。このお店の魅力は何といってもランチの海鮮丼！マグロが丼にこぼれそうな程たっぷりのった海鮮丼は、お味噌汁付きでなんとワンコイン！本当にオススメなのでぜひ行ってみてください。</p><span>定休日</span>：日曜日<br><span>営業時間</span>：11:30～14:00 17:00～22:00<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".emerald").click(function(){
+        $("#comment").html("<b>ヤマト屋</b><p>地元和菓子店の元店主が手掛ける本格的なかき氷を食べることのできるお店です。このお店の特徴はなんといっても、そのメニュー。苺やレモン等の定番商品に加えて、地元で作られた枝豆や草加煎餅を使用した商品があります。</p><span>定休日</span>：木曜日<br><span>営業時間</span>：11:00～L.O. 17:00<br><small>※実際の情報とは異なる場合があります</small>");
+    });
+    $(".red").click(function(){
+        $("#comment").html("<b>乃が美はなれ</b><p>大人気高級「生」食パンの名店です。ふんわり柔らかい乃が美の食パンは、『「いまどうしても食べたいパン」10選』、『日本の食パン、名品10本。』、パン・オブ・ザ・イヤー 2016 食パン部門 金賞受賞、『Yahoo!検索大賞食品部門賞』を2016年から2019年3年連続受賞と各メディアから絶賛されるほど。焼き上がりの時間前には、列ができ売り切れてしまう日もあるこの「生」食パン。お家へのお土産にいかがでしょうか。</p><span>定休日</span>：不定休<br><span>営業時間</span>：11:00～19:00<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".yellowgreen").click(function(){
+        $("#comment").html("<b>花ゆらい</b><p>本格的な沖縄郷土料理を楽しめるお店です。店内には沖縄の伝統的な楽器である三味線の音色が店中を包みます。花ゆらいで沖縄にいった気分になれるかも、、？</p><span>定休日</span>：日曜日・月曜日<br><span>営業時間</span>：17:00～22:00（L.O.21:30)<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".pink").click(function(){
+        $("#comment").html("<b>日高屋</b><p>学生の味方中華食堂日高屋です。獨協大学前駅東口すぐにある姉妹店「焼き鳥日高」も必見！</p><span>定休日</span>：年中無休<br><span>営業時間</span>：10:00～翌2:00（L.O翌1:30）<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    $(".brown").click(function(){
+        $("#comment").html("<b>イタリアンダイニング DoNA　</b><p>生パスタがメインのカジュアルレストランです。このお店の魅力は店内のパスタ同価格でS,M,Lサイズを選択することが出来るところです。おなかいっぱい食べられること間違いなし！</p><span>定休日</span>：不定休<br><span>営業時間</span>：11:00-23:00<br><small>※現在の情報とは異なる場合があります</small>");
+    });
+    if ($(window).width() < 700){
+        $("#comment").html("<span>大学近くのオススメスポットを紹介するよ。色のついた丸をタップしてね。</span>");
+    }
+</script>

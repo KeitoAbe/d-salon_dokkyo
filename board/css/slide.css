@@ -1,0 +1,122 @@
+  .home-icon-menu {
+      clear: both;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 10px 25px 0 10px;
+      float: left;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      object-fit: cover;
+  }
+  
+  input[name=btn_logout] {
+      background-color: #fff;
+      appearance: none;
+      -webkit-appearance: none;
+      padding: 15px 10px;
+      color: #000;
+      line-height: 1.0em;
+      cursor: pointer;
+      border: none;
+      font-size: 1.0rem;
+      width: 100%;
+      text-align: left;
+      margin: 0;
+  }
+  
+  input[name="btn_logout"]:hover,
+  button:hover {
+      background-color: #fff;
+  }
+  
+  .menu {
+      background: #fff;
+      position: absolute;
+      transform: translate(-185px);
+      transition: 0.3s ease-out;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      height: 100vh;
+  }
+  
+  .menu.open {
+      transform: translate(0);
+      transition: 0.3s ease-out;
+  }
+  
+  .menu p {
+      font-size: 1.5rem;
+      color: #94847b;
+  }
+  
+  .menu h1 {
+      font-size: 1rem;
+      margin-top: 17px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  
+  .menu h2 {
+      clear: both;
+      font-size: 1rem;
+      margin-top: 65px;
+      margin-left: 10px;
+      margin-bottom: 0px;
+  }
+  
+  .menu h3 {
+      font-size: 0.8rem;
+      margin: 0;
+      margin-left: 10px;
+      color: #8a9aa4;
+      font-weight: normal;
+  }
+  
+  .menu a {
+      display: block;
+      padding: 15px 10px;
+      text-decoration: none;
+      color: #000;
+      font-size: 0.9rem;
+      cursor: pointer;
+  }
+  
+  .menu i {
+      color: #8a9aa4;
+      padding: 0 3px 0 3px;
+  }
+  
+  .home-close {
+      margin-right: 0;
+  }
+  
+  .acount-info {
+      display: flex;
+      border-bottom: 1px solid rgb(196, 207, 214);
+  }
+  
+  .logout {
+      border-top: 1px solid #eee;
+  }
+  
+  .menu form {
+      margin-bottom: 0;
+  }
+  
+  @media only screen and (min-width: 800px) {
+      .menu {
+          border: 1px solid #eee;
+          width: 183px;
+          position: fixed;
+      }
+      .acount-info {
+          display: none;
+      }
+  }
+  
+  @media only screen and (max-width: 800px) {
+      .menu-home {
+          display: none;
+      }
+  }

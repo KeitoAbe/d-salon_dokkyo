@@ -1,0 +1,388 @@
+.btn {
+    color: #999;
+    font-size: 1.0rem;
+}
+
+.active {
+    color: #f44336;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #00acee;
+    text-align: center;
+    line-height: 80px;
+    position: fixed;
+    right: calc(calc(100vw - 400px) / 2);
+    bottom: 20px;
+}
+
+header {
+    height: 53px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 3;
+}
+
+input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 8px 18px;
+    color: #fff;
+    line-height: 1.0em;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #00acee;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-right: 3px;
+}
+
+.tweet {
+    float: right;
+}
+
+.message_icon img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px 0 0 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile a {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 8px 18px;
+    color: #94847b;
+    line-height: 1.0em;
+    cursor: pointer;
+    border: 1px solid #94847b;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-right: 15px;
+    font-size: 1.0rem;
+    text-decoration: none;
+    float: right;
+}
+
+.tweet-name {
+    display: flex;
+}
+
+textarea {
+    margin-top: 15px;
+    margin-left: 60px;
+    border: 1px solid #fff;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    width: 80%;
+    max-width: 340px;
+    position: absolute;
+    height: 130px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.do_tweet {
+    font-weight: bold;
+    line-height: 110%;
+    font-size: 1.1rem;
+}
+
+.do_tweet span {
+    font-size: 0.7rem;
+    color: #8a9aa4;
+    font-weight: normal;
+    margin-left: 2px;
+}
+
+.who_tweet {
+    margin-top: 17px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 80%;
+}
+
+.who_tweet span {
+    font-size: 0.8rem;
+    color: #8a9aa4;
+    font-weight: normal;
+}
+
+.tweet-message {
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+    margin-left: 5px;
+}
+
+.tweet-date {
+    color: #999;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #eeeeee;
+    padding-left: 5px;
+}
+
+.message {
+    padding-top: 53px;
+    margin: 0 10px;
+}
+
+.iine {
+    padding-left: 5px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.icon i {
+    font-size: 1.2rem;
+    padding: 15px 50px;
+    cursor: pointer;
+}
+
+.icon {
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.twitter__block {
+    position: relative;
+}
+
+.twitter__block a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.in-pict-reply img {
+    border-radius: 20px;
+    margin: 5px 0;
+    width: 95%;
+}
+
+.iine a {
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: none;
+}
+
+.iine p {
+    display: inline-block;
+    padding: 15px 15px 15px 0;
+    margin: 0;
+}
+
+.iine span {
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-menu {
+    line-height: 44px;
+    text-align: center;
+    border: none;
+}
+
+.btn_open {
+    display: block;
+    margin: 0 0 0 auto;
+    padding: 16px 10px;
+    background-color: #fff;
+    color: #8a9aa4;
+    cursor: pointer;
+}
+
+.btn_close {
+    width: 100%;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgb(239, 239, 239);
+}
+
+#slide {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    max-width: 450px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+}
+
+.slide-menu {
+    margin: 10px;
+}
+
+.slide-menu p {
+    margin-left: 10px;
+    color: #f44336;
+}
+
+.slide-menu a {
+    text-decoration: none;
+}
+
+#wrapper {
+    z-index: 10;
+}
+
+.reply-to {
+    margin-left: 5px;
+}
+
+.reply-to p {
+    color: #999;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.reply-to a {
+    text-decoration: none;
+    color: #00acee;
+}
+
+.reply-to-tweet p {
+    margin: 0;
+    color: #8a9aa4;
+}
+
+.reply-to-tweet span {
+    color: #00acee;
+}
+
+.reply-to-tweet a {
+    position: relative;
+    text-decoration: none;
+}
+
+.profile {
+    padding-top: 60px;
+    padding-left: 15px;
+    background-color: #fff;
+}
+
+.profile h1 {
+    font-size: 1.1rem;
+    margin: 5px 0 0 0;
+}
+
+.profile p {
+    font-size: 0.8rem;
+    color: #8a9aa4;
+    margin: 0;
+}
+
+.message_icon img {
+    height: 75px;
+    width: 75px;
+}
+
+.profile-tab {
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    background-color: #fff;
+}
+
+.profile-tab ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-tab li {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0 12px 0;
+    color: rgb(91, 112, 131);
+    cursor: pointer;
+}
+
+.profile-tab li:nth-of-type(1) {
+    color: #94847b;
+    border-bottom: 2px solid #94847b;
+}
+
+.user_profile {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+}
+
+.user_profile p {
+    margin: 0;
+    padding: 5px 0 0 0;
+    font-size: 0.9rem;
+}
+
+input[name=btn_logout] {
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 15px 10px;
+    color: #000;
+    line-height: 1.0em;
+    cursor: pointer;
+    border: none;
+    font-size: 1.0rem;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+.message_array_reply {
+    display: none;
+}
+
+.message_array_likes {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .twitter__contents {
+        margin-top: 0px;
+    }
+    .logout_btn {
+        top: 90px;
+    }
+    .profile_btn {
+        top: 45px;
+    }
+    .profile a {
+        position: absolute;
+        right: 0;
+    }
+}

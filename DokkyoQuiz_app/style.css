@@ -1,0 +1,306 @@
+body {
+  padding: 0 16px;
+  background-image: repeating-linear-gradient(to bottom, transparent 25px, rgba(0, 0, 0, 0.04) 26px, rgba(0, 0, 0, 0.04) 26px, transparent 27px, transparent 51px, rgba(0, 0, 0, 0.04)2px, rgba(0, 0, 0, 0.04) 52px, transparent 53px, transparent 77px, rgba(0, 0, 0, 0.04) 78px, rgba(0, 0, 0, 0.04) 78px, transparent 79px, transparent 103px, rgba(0, 0, 0, 0.04) 104px, rgba(0, 0, 0, 0.04) 104px, transparent 105px, transparent 129px, rgba(0, 0, 0, 0.04) 130px, rgba(0, 0, 0, 0.04) 130px), repeating-linear-gradient(to right, transparent 25px, rgba(0, 0, 0, 0.04) 26px, rgba(0, 0, 0, 0.04) 26px, transparent 27px, transparent 51px, rgba(0, 0, 0, 0.04) 52px, rgba(0, 0, 0, 0.04) 52px, transparent 53px, transparent 77px, rgba(0, 0, 0, 0.04) 78px, rgba(0, 0, 0, 0.04) 78px, transparent 79px, transparent 103px, rgba(0, 0, 0, 0.04) 104px, rgba(0, 0, 0, 0.04) 104px, transparent 105px, transparent 129px, rgba(0, 0, 0, 0.04) 130px, rgba(0, 0, 0, 0.04) 130px);
+}
+
+.logo {
+  width: inherit;
+  margin-top: 22px;
+  margin-left: 2px;
+}
+
+.container{
+  margin: auto;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+div.is-hidden {
+  display: none;
+}
+
+div.is-visible {
+  display: block;
+}
+
+.game {
+  display: none;
+}
+
+.result {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+.screen {
+  max-width: 600px;
+  margin: 32px auto;
+  text-align: center;
+}
+
+.screen button {
+  display: inline-block;
+}
+
+#listAnswer {
+  margin-top: 24px;
+}
+
+.questionChoice {
+  margin-top: 12px;
+}
+
+.questionChoice:hover {
+  cursor: pointer;
+}
+body{
+  background-color: transparent;
+}
+
+
+/*　右側のハンバーガーリスト　*/
+
+.hamburger {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    right: 10px;
+    top: 11px;
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    text-align: center;
+    border: 1.5px solid #94847b;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+.hamburger.active  {
+  border: 1.5px solid #fff;
+  background-color: transparent;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 1.5px;
+    left: 6.5px;
+    background: #94847b;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 8.5px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 14.5px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 20.5px;
+}
+
+.hamburger.active span:nth-child(1) {
+  top : 15px;
+  background :#fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 15px;
+  background :#fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background: #94847be4;
+    text-align: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: all 0.6s;
+    height: 100%;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  margin-top: 55px;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+  font-size: 1.0rem;
+}
+
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav.globalMenuSp ul li:hover{
+  background :#ddd;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #fff;
+  padding: 1.2em 0;
+  text-decoration :none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    z-index: 1;
+}
+
+.overlay.open {
+    display: block;
+}
+
+nav.globalMenuSp.active {
+  opacity: 100;
+  display: block;
+   transform: translateX(0%);
+}
+
+*{
+  box-sizing: initial;
+}
+
+@media screen and (min-width:710px) {
+    nav.globalMenuSp {
+        width: 250px;
+    }
+}
+/*　ここまでハンバーガーリスト　*/
+
+/*　背景付きの題名*/
+.title{
+  width: 120px;
+  text-align: center;
+}
+ h3 {
+       padding: 10px 20px;
+       margin: 20px 0;
+       font-weight: bold;
+       color: #FFF;
+       background-color: rgb(0,0,0,0.5);
+       border: solid 1px black;
+       border-radius: 10px;
+   }
+/*　ここまで背景付きの題名　*/
+
+.setsumei{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+  max-width: 600px;
+  overflow:hidden;
+  margin-bottom: 1em;
+  border-radius: 30px;
+  border: 1px solid #999;
+  padding: 30px;
+  text-align: center;
+  background-color:#ffedab;
+}
+
+.boutou{
+  margin:0 auto;
+}
+
+.boutou p{
+  overflow:hidden;
+  border-radius: 30px;
+  border: 1px solid #999;
+  padding: 30px;
+  text-align: center;
+  background-color:#ffedab;
+}
+
+
+.list-group1 {
+ margin: 0; /*余白をリセット*/
+ padding: 0; /*余白をリセット*/
+ list-style-type: none; /*マーカーを削除*/
+ border-top: solid 1px #3dbfb8; /*枠線・上*/
+}
+.blue{
+ padding: 10px 20px; /*余白*/
+ background: #e3f6f5; /*背景色*/
+ border-bottom: solid 1px #3dbfb8; /*枠線・下*/
+}
+.list-group2 {
+ margin: 0; /*余白をリセット*/
+ padding: 0; /*余白をリセット*/
+ list-style-type: none; /*マーカーを削除*/
+ border-top: solid 1px #bf3db0; /*枠線・上*/
+}
+.purple{
+ padding: 10px 20px; /*余白*/
+ background: #f1dbf6; /*背景色*/
+ border-bottom: solid 1px #bf3db0; /*枠線・下*/
+}
+
+.list-group li:before{
+  font-family: FontAwesome;
+  content: "\f040";
+  position: absolute;
+  color: white; /*アイコン色*/
+  font-weight: normal;/*アイコンは太字にしない*/
+  left : -35px; /*左端からのアイコンまでの距離*/
+}
+
+.text-blue{
+ list-style-type: none; /*マーカーを削除*/
+ border-top: solid 1px #3dbfb8; /*枠線・上*/
+}
+.text-blue p{
+  padding: 10px 20px; /*余白*/
+  background: #e3f6f5; /*背景色*/
+  border-bottom: solid 1px #3dbfb8; /*枠線・下*/
+}
+
+.text-purple{
+ list-style-type: none; /*マーカーを削除*/
+ border-top: solid 1px #bf3db0; /*枠線・上*/
+}
+.text-purple p{
+  padding: 10px 20px; /*余白*/
+  background: #f1dbf6; /*背景色*/
+  border-bottom: solid 1px #bf3db0; /*枠線・下*/
+}

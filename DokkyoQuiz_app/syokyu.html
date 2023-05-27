@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>獨協クイズ　初級</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+  </head>
+  <body>
+    <!--<a href="../">-->
+    <a href="https://www.d-salon.jp/">
+      <image src="logo.png" class="logo">
+    </a>
+    <div id="sceneTop" class="top screen"> 
+      <h3 id="title">獨協クイズ　初級</h3><hr>
+      <div class="boutou">
+      <p>初級では獨協大学にまつわる比較的易しい問題が出されます。</p></div>
+      <p>▼以下をクリックするとスタートします。</p>
+      <button id="btnStart"  class="btn btn-outline-secondary">Quiz Start</button>
+    </div>
+
+    <div id="sceneGame" class="game screen">
+      <h3 id="title">獨協クイズ　初級　No.<span id="numEnglish"></span></h3><hr>
+      <div class="text-blue"><p id="textQuestion"></p></div>
+      <div id="listAnswer" class="d-grid gap-2"></div>
+    </div>
+    <!--<div id="sceneAnswer" class="answer screen">-->
+      <!--<h1>English Quiz No.<span id="numEnglish"></span></h1>-->
+      <!--<p id="textQuestion"></p>-->
+      <!--<ul id="textAnswer"></ul>-->
+    <!--</div>-->
+
+    <div id="sceneResult" class="result screen">
+      <h1>リザルト画面</h1>
+      <p>正解数は<span id="numResult"></span>問です。</p>
+      <button id="btnReset" class="btn btn-outline-secondary">Reset</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
